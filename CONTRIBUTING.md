@@ -32,7 +32,6 @@ For example, run this command inside your terminal:
 
 git clone https://github.com/<your-github-username>/jsp-and-servlet-todo-list-app.git
 
-
 ```
 
 ### Replace (your-github-username)!
@@ -51,7 +50,6 @@ git pull upstream master
 
 git push
 
-
 ```
 
 - Checkout to development branch (name your branch according to the issue name).
@@ -59,7 +57,6 @@ git push
 ```
 
 git checkout -b <branch-name>
-
 
 ```
 
@@ -72,7 +69,6 @@ Add the changes with `git add`, `git commit`.
 ```
 
 git push origin <branch-name>
-
 
 ```
 
