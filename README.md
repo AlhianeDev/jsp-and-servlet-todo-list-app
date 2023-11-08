@@ -7,7 +7,7 @@ Just Do It
 
 ![Image not found!](https://github.com/AlhianeDev/jsp-and-servlet-todo-list-app/blob/main/src/main/webapp/images/banner.png)
 
-- View the local installation in the [CONTRUBUTING.md]([https://www.example.com](https://github.com/AlhianeDev/jsp-and-servlet-todo-list-app/edit/main/CONTRUBUTING.md)).
+- View the local installation in the [CONTRUBUTING.md.](https://github.com/AlhianeDev/jsp-and-servlet-todo-list-app/blob/main/CONTRIBUTING.md)
 
 #### Features:
 
