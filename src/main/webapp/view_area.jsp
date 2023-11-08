@@ -68,7 +68,7 @@
 					
 						List <Todo> limit_todos = (List <Todo>) request.getAttribute("limit_todos");
 					
-						if (limit_todos.size() > 0) { 
+						if (all_todos.size() > 0) { 
 					
 					%>
 					

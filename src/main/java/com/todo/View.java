@@ -53,21 +53,37 @@ public class View extends HttpServlet {
 			
 		} else {
 			
+			int user_id = ((User) request.getSession().getAttribute("user")).getId();
+			
+			int pageId = 1;
+			
+			if (request.getParameter("page") == null) {
+				
+				if (session.getAttribute("pageId") != null)
+						
+					pageId = Integer.parseInt(session.getAttribute("pageId").toString());
+				
+			} else {
+				
+				session.setAttribute(
+						
+						"pageId",
+						
+						request.getParameter("page")
+							
+				);
+				
+				pageId = Integer.parseInt(request.getParameter("page"));
+				
+			}
+		
 			List<Todo> all_todos = TodoDao.read_todos(
 					
-					((User) request.getSession().getAttribute("user")).getId()
+				((User) request.getSession().getAttribute("user")).getId()
 						
 			);
 		
-			List<Todo> limit_todos = TodoDao.read_limit_todos(
-					
-				((User) request.getSession().getAttribute("user")).getId(),
-				
-				request.getParameter("page") != null ? Integer.parseInt(request.getParameter("page")) : 1,
-				
-				6
-					
-			);
+			List<Todo> limit_todos = TodoDao.read_limit_todos(user_id, pageId, 6);
 			
 			request.setAttribute("all_todos", all_todos);
 			

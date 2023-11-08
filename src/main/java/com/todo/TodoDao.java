@@ -274,7 +274,11 @@ public class TodoDao {
 		
 		try (
 		
-			Statement statement = connection.createStatement();
+			Statement statement = connection.createStatement(
+			
+				ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY
+					
+			);
 				
 			ResultSet rs = statement.executeQuery(
 				
@@ -288,23 +292,33 @@ public class TodoDao {
 				
 		) {
 			
-			while (rs.next()) {
+			if (rs.next()) {
 				
-				Todo todo = new Todo (
+				rs.beforeFirst();
 				
-					rs.getInt("id"),
+				while (rs.next()) {
 					
-					rs.getString("title"),
+					Todo todo = new Todo (
 					
-					rs.getString("createdAt"),
-					
-					rs.getBoolean("is_checked"),
-					
-					rs.getInt("user_id")
+						rs.getInt("id"),
 						
-				);
+						rs.getString("title"),
+						
+						rs.getString("createdAt"),
+						
+						rs.getBoolean("is_checked"),
+						
+						rs.getInt("user_id")
+							
+					);
+					
+					todos.add(todo);
+					
+				}
+			
+			} else {
 				
-				todos.add(todo);
+				return read_limit_todos(user_id, pageId - 1, total);
 				
 			}
 			
@@ -438,7 +452,9 @@ public class TodoDao {
 				
 			ResultSet rs = statement.executeQuery(
 				
-				"SELECT is_checked FROM Todos WHERE user_id = " + "'" + user_id + "'"
+				"SELECT is_checked FROM Todos WHERE id = " + "'" + id + "'" +
+				
+				" AND user_id = " + "'" + user_id + "'"
 					
 			);
 				
