@@ -34,7 +34,7 @@ git clone https://github.com/<your-github-username>/jsp-and-servlet-todo-list-ap
 
 ```
 
-### Replace (your-github-username)!
+**Replace <your-github-username>!**
 
 Learn more about [forking](https://docs.github.com/en/get-started/quickstart/fork-a-repo) and [cloning a repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
 
