@@ -1,8 +1,6 @@
 Just Do It
 ----------
 
-* * *
-
 ### A Simple To - Do Website!
 
 * * *
@@ -11,25 +9,23 @@ Just Do It
 
 #### Features:
 
-* * *
-
 *   User-friendly
 *   Mysql For Storage Supported
 *   Register and Login Supported
 *   Displays current Date and Time
 *   Responsive, on all devices
 
-#### Features to be added:
-
 * * *
+
+#### Features to be added:
 
 *   SubTasks: Adding subtasks to the enlisted tasks, could be an option.
 *   Reminder/Alerts: Sending automated mails once logged in, and due date/time set.
 *   Themes: Users can choose among different themes.
 
-#### References:
-
 * * *
+
+#### References:
 
 *   For Fonts: [Google Fonts](https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap)
 *   For Basic Icons (like Trash and Check buttons): [font-awesome](https://fontawesome.com/)
@@ -41,9 +37,9 @@ Just Do It
 *   For Servlet (Tutorial) [Java Point](https://www.javatpoint.com/servlet-tutorial)
 *   For Jsp (Tutorial) [Java Point](https://www.javatpoint.com/jsp-tutorial)
 
-#### WEBSITE DEMO
-
 * * *
+
+#### WEBSITE DEMO:
 
 *   ![Image not found!](https://github.com/AlhianeDev/jsp-and-servlet-todo-list-app/blob/main/src/main/webapp/images/demo-1.png)
     
@@ -66,13 +62,10 @@ Just Do It
     * * *
     
 *   ![Image not found!](https://github.com/AlhianeDev/jsp-and-servlet-todo-list-app/blob/main/src/main/webapp/images/demo-6.png)
-    
-    * * *
-    
-
-#### Author:
 
 * * *
+
+#### Author:
 
 *   Alhiane Lahcen (Gmail: Alhiane Dev): [makclaaax@gmail.com](mailto:makclaaax@gmail.com)
 *   Alhiane Lahcen (LinkedIn: Alhiane Dev): [LinkedIn](https://www.linkedin.com/in/alhiane-dev-0050b5291/)
